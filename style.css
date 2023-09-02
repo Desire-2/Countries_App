@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 2em;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.header h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.search_wrapper {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+}
+
+#country_input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#region_filter {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#search_btn {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.country-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.country-item {
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.flag-image {
+    max-width: 100px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.country-details {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.country-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.country-details ul li {
+    margin-bottom: 10px;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode .header h1 {
+    color: #fff;
+}
+
+.dark-mode .search_wrapper input,
+.dark-mode .search_wrapper select,
+.dark-mode .search_wrapper button {
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #666;
+}
+
+.dark-mode .country-item {
+    background-color: #444;
+    border: 1px solid #666;
+    color: #fff;
+}
+
+.dark-mode .country-details {
+    background-color: #444;
+    border: 1px solid #666;
+    color: #fff;
+}
+
+.dark-mode .country-details ul li {
+    color: #fff;
+}
